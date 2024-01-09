@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Thesaurus [demo]</title>
+  <script src="./app.js" defer></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header class="nav">
+    <a href="./index.html">Home</a>
+    <a href="./topsearched.html">Top 5 Searched Words</a>
+  </header>
+  <h1>Simple Thesaurus.</h1>
+  <h2>Search for a word to find synonyms.</h2>
+  <div class="display">
+    <div class="output">
+      <p id="word">word</p>
+      <p id="syns">synonyms</p>
+      <!--<p id="pos">part of speech</p>
+      <p id="def">definition</p>-->
+    </div>
+    <div class="bar">
+      <input type="text" class="search" id="query" placeholder="Enter a word">
+      <div class="buttonContainer">
+        <button class="reset" id="resetBtn" onclick="window.location.href='index.html'">Reset</button>
+        <button class="search-button" id="searchBtn">Search</button>
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>
