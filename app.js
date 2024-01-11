@@ -8,8 +8,9 @@ $('#searchBtn').click(function () {
     .then(data => {
       $('#word').html(data[0].hwi.hw);
       for (let i = 0; i <= data.length; i++) {
-        $('#syns').html(data[i].meta.syns)
-        console.log(data[i]);
+        $('#syns').html(data[0].meta.syns)
+        //$('#syns').html(data[i].meta.syns)
+        console.log(data[i].meta.syns);
         //for (let j = 0; i <= data[j].length; i++) {
         //  console.log(data[j])
       }
